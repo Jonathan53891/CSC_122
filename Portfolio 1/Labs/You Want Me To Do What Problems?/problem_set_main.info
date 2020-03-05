@@ -1,0 +1,20 @@
+/*
+    - Name: Jonathan Pilafas
+    - Class for which program was written: CSC122-001
+    - Program: Lab - "You Want Me To Do What Problems?"
+    - Project Name: problem_set_main
+    - Project Type: .cpp
+    - Levels Attempted:
+        - Given assignment is Level 4.
+	- Program can also properly encapsulate the management of your problems 
+	list in a class, which is Level 2.
+	- So this assignment is Level 4 + Level 2 = Level 6.
+    
+    - Program Description:
+      
+      This program reads an assigned homework list inputted by the user and 
+      outputs a similar format that lists every single problem in order. This 
+      program automatically ignores repeat questions, and it can also accept a 
+      range of problems that are simply designated with a hyphen.
+
+*/
