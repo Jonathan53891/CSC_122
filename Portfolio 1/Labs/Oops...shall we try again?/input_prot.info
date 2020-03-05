@@ -1,0 +1,28 @@
+/*
+    - Name: Jonathan Pilafas
+    - Class for which program was written: CSC122-001
+    - Program: Lab - "Oops...shall we try again?"
+    - Project Title: input_main
+    - Project Type: .cpp
+    - Levels Attempted: 
+    	- Given assignment is Level 2
+	- Program also protects inputs from user stupidity, which is Level 1.
+	- No greater levels attempted
+	- So this assignment is Level 2 + Level 1 = Level 3
+    
+    - Program Description: 
+      
+      This C++ program is a function that allows a case-insensitive comparison 
+      of two strings. This is done without altering the strings at all 
+      throughout the duration of the program. In addition, this program does 
+      not make any copies of the string that is inputted, rather the program 
+      passes the strings by reference to maximize effectiveness/efficiency.
+      
+      This program takes in user input and verifies its validity depending on 
+      specified return type. The types of data it works with are int, double 
+      and char. If it is not valid, it will prompt the user to re-enter the 
+      data. For numbers, the user can specify a valid range. In addition, it 
+      can verify to see if inputted data is found in a list and if not, prompt 
+      to re-enter in data.
+
+*/
