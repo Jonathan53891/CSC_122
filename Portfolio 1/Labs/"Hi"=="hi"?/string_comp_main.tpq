@@ -1,0 +1,49 @@
+/*
+1. How do you compare two characters without reference to case? How might you 
+do this without destroying the character variable(s) contents?
+
+~~~~~ To compare two characters without reference to its case, you can use a 
+while statement to walk from char to char along each of the strings that are 
+being compared to each other until the program reaches the end or finds a 
+difference in the characters at the two aligned positions. This is an 
+alternative from the .compare() function or any other built-in comparison 
+function that would otherwise be case-sensitive.
+
+2. How can you compare two strings in a case-insensitive way without 
+destroying their contents? (You should NOT change the strings in order to 
+compare them!)
+
+~~~~~ To compare two strings in a case-insensitive way without destroying its 
+contents, I used the following function: short string_comparison(string first,
+string second). 
+
+We are using a while statement to observe the inputted string 
+character-by-character, -so we need a loop control variable to control the 
+while statement, thus making ?short? the ideal unsigned int type for this 
+program.
+
+3. What kind of arguments should your string comparison function take? (Value, 
+reference, constant?)
+
+~~~~~ The argument that my string comparison function has is passing string 1 
+and string 2 by reference. This allows the program to refer back to the string 
+inputted instead of copying it (numerous times, potentially) to maximize the 
+program's efficiency.
+
+4. How do you get that weird ?return? value for your function? Is it always 
+"-1","0","1"? Or is there a reason it was defined as simply less than "0","0", 
+or greater than "0"?
+
+~~~~~ For the return variables for my comparison functions, I return 0 if the 
+inputted strings are the same, return -1 if the first string is smaller than 
+the second string, and return +1 if the second string is smaller than the 
+first string.
+
+5. How many times will you need to call your function to test it thoroughly? 
+How many times should you have to run the driver to do this testing?
+
+~~~~~ To test my program sufficiently, it requires at least 3 tests to ensure 
+that it works effectively. Since there are 3 possible results that could 
+ideally be obtained, all of these potential results must be tested to confirm 
+the effectiveness of the program.
+*/
