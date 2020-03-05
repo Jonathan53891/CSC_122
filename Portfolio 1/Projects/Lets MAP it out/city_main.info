@@ -1,0 +1,27 @@
+/*
+    - Name: Jonathan Pilafas
+    - Class for which program was written: CSC122-001
+    - Program: Project - "Map it Out"
+    - Project Type: .cpp
+    - Levels Attempted: 
+    	- Given assignment is Level 4.
+	- Program also adds a third class to manage the city list to keep the 
+	main uncluttered by list management details, which is Level 2.
+	- So this assignment is Level 4 + Level 2 = Level 6.
+    
+    - Program Description: 
+      
+      This program allows the user to enter a city's information (name and 
+      coordinates). The program can calculate the distance between two cities 
+      that the user decides on. The program can also print a list of all the 
+      cities. If the list is full, the user is able to override a city or 
+      cancel. The program's automatic default consists of the following:
+      	- If the list has exactly two cities, it will calculate the distance 
+	between two.
+	- If the list has less than two cities, the program will display an 
+	error that notifies the user there are not enough cities to calculate 
+	the distance. 
+	- If the list has more than two cities, the user will choose which 
+	two cites he or she wants to find the distance of.
+
+*/
