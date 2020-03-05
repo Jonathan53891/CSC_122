@@ -1,0 +1,70 @@
+/*
+
+1. How can you pass a prompt or error message to a function as an argument?
+
+~~~~~ To pass a prompt or error message to a function as an argument, you have 
+to pass it as a string. To do this, you need the string header file: 
+#include <string>
+
+2. How do you pass a string to a function? Will the strings need to be changed 
+here? What care do you need to take for these arguments, then?
+
+~~~~~ To pass a string to a function you need to pass it as a const and you 
+need to pass it by reference. Doing this means you cannot modify the string 
+after it is inputted. To pass a list of char values, you can use a string, 
+which can be passed as "const &".
+
+3. How do you pass a list of values to a function? Will the elements need to 
+be changed here? What care do you need to take for these arguments, then?
+
+~~~~~ To pass a list of values to a function, you need to pass a vector. Also,
+passing it specifically by reference can save processing time and processing 
+power, since you don't want to modify the string.
+
+4. What other arguments does each function take? Are they changed? What special 
+care should you take with them?
+
+~~~~~ The function should take the minimum or range for the int's and double's. 
+To make the program just upper bounded, the minimum can be -999999999. These 
+are not changed, so we can pass it as a "const".
+
+5. What value is returned by your functions? What type is it and what does it 
+represent?
+
+~~~~~ The value returned by my functions are int, double, and char, depending 
+on what input protection function is being used. This is the value was entered 
+that passed through the test and was valid.
+
+6. What care does a caller of your functions have to take with this return 
+value? (Can they immediately assume it is a valid entry?)
+
+~~~~~ The function being used can't check for "logic" and effectively 
+determine if the input was reasonable or not. It can just check to see if the 
+input was valid and within the given range.
+
+7. How does the compiler distinguish which of your functions is being used for 
+a particular call? (They ALL have the same name, after all...)
+
+~~~~~ The compiler distinguishes whichever function being used by overloading. 
+So despite the varying amounts of arguments and types within the program. The 
+compiler will know which function to use.
+
+8. How do you protect your library from being circularly included?
+
+~~~~~ You protect your library from being circularly included by using #indef,
+#define, and #endif.
+
+9. What changes are needed in your main application (the test application 
+here) to get it to work with the library? What about the compiling process?
+
+~~~~~ The main change you need to make in your main application is that you 
+need an #include to access the library in the main file. That way you compile 
+all of the necessary files at once.
+
+10. How many files does your library consist of? What are they? Which one(s) 
+do you #include?
+
+~~~~~ There are two files that your library consists of. There is one source 
+file and one header file, but you only have to #include the header file.
+
+*/
