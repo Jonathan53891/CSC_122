@@ -1,0 +1,20 @@
+/*
+    - Name: Jonathan Pilafas
+    - Class for which program was written: CSC122-001
+    - Program: Lab - "Hi"==""hi?
+    - Project Name: Hi_Equals_hi_String
+    - Project Type: .cpp
+    - Levels Attempted: 
+    	- Given assignment is Level 1.5
+	- No greater levels attempted
+	- So this assignment is Level 1.5 + Level 0 = Level 1.5
+    
+    - Program Description: 
+      
+      This C++ program is a function that allows a case-insensitive comparison 
+      of two strings. This is done without altering the strings at all 
+      throughout the duration of the program. In addition, this program does 
+      not make any copies of the string that is inputted, rather the program 
+      passes the strings by reference to maximize effectiveness/efficiency.
+
+*/
