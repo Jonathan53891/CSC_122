@@ -1,0 +1,46 @@
+/*
+
+1. In what data type(s) can you store something like the problem set name that 
+might be anything from one character to a whole bunch of text?
+
+~~~~~ You can store the data you have in a class.
+
+2. How can you detect that the problem set name is a quoted string? How can 
+you read in the whole thing to a single variable? (Don't worry that the user 
+has missed a close quote.)
+
+~~~~~ To detect that the problem set name is a quoted string, you can test if 
+the input == '\'' or if the input == '\"'. Then, you could 
+getline(cin,variable_name,'\'') for a single quote or 
+getline(cin,variable_name,'\"') for a double quote.
+
+3. If the user's problem set name is a quoted string, how can you remove the 
+quotes from it? 
+
+~~~~~ You can remove the quotes from it by using the quotes to trigger the 
+input to start as well as the input to end. That way, the program will only be 
+able to input what is inside the quotes instead of the actual quotes himself.
+
+4. When placing items (say problem numbers?) into a list, how can you keep 
+those items sorted from the beginning? (I.E. from their very insertion into the 
+list..?)
+
+~~~~~ By using an insertion sort, you can keep those particular items sorted 
+from the beginning as you input into your list. The insertion sort algorithm 
+will insert the new data automatically into the position, and the list will 
+still be in order.
+
+5. How can you avoid placing a duplicate item into a list? 
+
+~~~~~ If a duplicate item is detected inside the list, you can simply ignore 
+that item and move on to the next one.
+
+6. If the problem list is long (like in math or physics), how can you wrap the 
+long output line to multiple lines without too much difficulty? 
+
+~~~~~ You can wrap the long output line to multiple lines by keeping track of 
+the list length with a counter variable. You can increment the list by its 
+"width" of what was added, and when the counter reaches its max, you can simply 
+add an endline and reset the counter.
+
+*/
