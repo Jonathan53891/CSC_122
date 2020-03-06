@@ -1,0 +1,206 @@
+/******************************************************************************
+
+3. Basics of C-strings
+
+*******************************************************************************/
+#include <iostream>
+#include <string> // <--- string class
+
+//using std::string; 
+/*If you don't want to prefix certain types in C++ every single time, we can 
+use the line of code above. */
+
+int main()
+{
+    //string greeting = "hello"; // <--- line we could use if we have "using std::string;"
+    std::string greeting = "Hello"; 
+    
+    /* "greeting" is the string object, "hello" is the string literal. It is of 
+    the string type within the string class.
+    
+    A string is literally just a group of characters. To access one of the 
+    individual characters within the string, you can do the following: */
+    
+    std::cout << greeting[0] << std::endl;
+    
+    /* When we compile this code above, we receive back the letter "h". This is 
+    due to the fact that the "0" withing "greeting[0]" tells the program to 
+    receive the first character of the string. 
+    
+    Know that C++ is 0-based, we can then determine that C++ reads strings as:
+    _____________________
+    |   |   |   |   |   |
+    | 0 | 1 | 2 | 3 | 4 |
+    |___|___|___|___|___|
+    |   |   |   |   |   |
+    | H | E | L | L | O |
+    |___|___|___|___|___|
+    
+    In addition, the default value for a string is an empty string.
+    
+    */
+    
+    std::string greeting2; //default ---> ""
+    std::cout << greeting2 << std::endl;
+    
+    /* The following print message will output an empty string, which is
+    literally just nothing. 
+    
+    C++ also has concatenation. So you can write code and print a string message
+    like the following:
+    */
+    
+    std::string greeting3 = "Look at this feature!";
+    std::cout << greeting + " there! " + greeting2 + greeting3 << std::endl;
+    
+    /* We can also append to a string, which is very similar to concatenation. 
+    But it just appends to the original variable. So we can use the following 
+    code: 
+    */
+    
+    greeting3 += " Yay!";
+    std::cout << greeting3 << std::endl;
+    
+    /* When you have a class (in this case, the "string" class), it has members.
+    When you build a class, you put things inside of it that allows the user to
+    work with the class when you create an object within the class, and that
+    object is going to have members inside of it.
+    
+    An example of a member within the string class can be seen within the
+    following code:
+    */
+    
+    std::cout << greeting3.length() << std::endl;
+    
+    /* Typically when we call a function, we just leave the function by itself,
+    (i.e., everything we've done within this program up until this point). But 
+    here, we are attaching a member within the "string" class to the object
+    "greeting3". Thus, we can utilize functions that are built-in within classes.
+    
+    The code from the .length() function we used up above will count the amount
+    of chracters within the "greeting3" string. So it counts how many characters 
+    are in "Look at this feature! Yay!" (including the spaces), which is 
+    clearly 26. So the program will simply ouput the number 26.
+    
+    There is another important term regarding C-strings, which is a method. We 
+    can think of methods as member functions. So when a function is a member, 
+    we are saying that the member is apart of the object, because it was defined
+    in the "string" class. So methods are just functions that are attached to 
+    objects. These terms are used interchangably pretty frequently.
+    */
+    
+    //method == member functions == functions attached to objects
+    
+    /* An example of a C-string can be found below: */
+    
+    char name[] = "Jonathan"; // c string == array of characters
+    
+    /* The C-style string uses the brackets like those above because the C-string
+    is actually an array of characters. 
+    
+    This way of making strings works, but there are a lot of limitations that
+    come by going about creating strings in this way. For instance, the string's
+    size cannot be changed easily. When we assign a literal string, such as 
+    "Jonathan" here, the size of the "name" is going to be 8, since there are 8
+    characters within the string "Jonathan". The compiler will read the array as:
+    
+    "Jonathan\0", where '\0' is the null-terminating character.
+    
+    This means that the amount of memory that the C-string "name" has is limited
+    to 8 characters, and we can't assign it another value that is any larger or 
+    smaller than the 8 characters that the array is set to be at. 
+    
+    So if we try printing the following code below:
+    */
+    
+    // name = "JonathanPilafas"
+    // OR
+    // name = "Jon"
+    
+    /* We will receive an error message from the compiler saying that "the array
+    type 'char[8]' is not attainable", thus proving that we can't simply change 
+    the value of a C-string.
+    
+    However, using the "string" class in C++, we can easily alter the amount of
+    characters we want to put into our string. For instance, we can use the 
+    following code:
+    
+    */
+    
+    greeting3 = "I just changed the string size.";
+    std::cout << greeting3 << std::endl;
+    std::cout << greeting3.length() << std::endl;
+    
+    /* The output of the code above will simply be the string as written. 
+    
+    So we can clearly see that C-strings are complicated and not as easy to work
+    with in comparison to the C++ strings within the string class. C++ strings
+    within the string class is the recommended/ideal way to go about writing
+    strings. 
+    
+    Now, if we want to get a string from user input, we can do the following:
+    */
+    
+    /*
+    std::string new_greeting;
+    std::cin >> new_greeting;
+    std::cout << new_greeting << std::endl;
+    */
+    
+    /* With the code above we can input a certain message that the user can 
+    decide to input, and the code above will output the first word of the string
+    that was inputted.
+    
+    Why does it only input one word? This is because the 'cin' object needs to
+    know when exactly to stop. It could stop on a multitude of options, such as 
+    a period or the null-terminating character or when given white space. 
+    Clearly, we can see that the creators of this language chose the "stopping 
+    point" for a string to be white space. Thus, when the 'cin' detects white 
+    space, 'cin' stops collecting characters to be inside the string.
+    
+    If we type in "Hello there" to be the string for "new_greeting", the 
+    program will print "hello", and "there" will actually be waiting to be 
+    printed as well.
+    
+    Thus, if we use the following code:
+    */
+    /*
+    std::string new_greeting2;
+    std::string left_over;
+    std::cin >> new_greeting2;
+    std::cin >> left_over;
+    std::cout << left_over << std::endl;
+    std::cout << new_greeting2 << std::endl;
+    */
+    
+    /* We can successfully print "Hello there" onto our screen. Albeit, the
+    message will be printed on a different line for each word. And creating a 
+    new member for each individual word is absolutely tedious to the max.
+    
+    So how do we get multiple words to be printed in one simple function?
+    
+    For this, we can simply use the 'getline()' function.
+    */
+    
+    std::string easy_greeting;
+    getline(std::cin, easy_greeting);
+    std::cout << easy_greeting << std::endl;
+    
+    /* There is another way to write 'getline()' functions, as seen below: */
+    
+    //cin.getline();
+    
+    /* The "getline(std::cin, easy_greeting);" version is better used for strings.
+       The "cin.getline();" is better used for numbers
+       
+    The 'getline()' function was created before the "string" class was created,
+    so it understands how to get int's, double's, etc. However, when it comes
+    to strings, we use the other way of writing a 'getline()' function.
+    */
+}
+
+
+
+
+
+//for more space
