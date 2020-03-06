@@ -106,6 +106,14 @@ int main()
     
     "Jonathan\0", where '\0' is the null-terminating character.
     
+    Alternative ways of writing C-strings can be found below
+    */
+    
+    char name[9] = "Jonathan";
+    char name[] = {'J','o','n','a','t','h','a','n','\0'};
+    char name[9] = {'J','o','n','a','t','h','a','n','\0'};
+    
+    /*
     This means that the amount of memory that the C-string "name" has is limited
     to 8 characters, and we can't assign it another value that is any larger or 
     smaller than the 8 characters that the array is set to be at. 
