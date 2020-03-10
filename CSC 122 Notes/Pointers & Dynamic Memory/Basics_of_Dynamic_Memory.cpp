@@ -234,12 +234,103 @@ old thing out on the heap to the new thing out on the heap.
 //int* p = new int;
 //*p = 5;
 //delete p;
-//p = NULL // p = 0;
+//p = NULL // p = 0;      //NEW LINE
 
 /*
 
 Also, if you're doing a 'delete' operation on a pointer where you're freeing up
-heap space
+heap space, and if you don't have something for the pointer p to be erased. Then,
+instead of keeping your pointer as a dangling pointer, assign the pointer p to 
+NULL. You can assign it to " = NULL" or " = 0". NULL is actually just a macro to
+zero. This line just simply indicates that the pointer is not referencing
+anything. In this particular case here, the 'delete' operation will free up the
+memory out on the heap. Then the 'p = NULL' will allow the program to get rid of
+the dangling pointer and it p simply refers to 0 in the stack. If we use the 
+pointer p here, it will refer to NULL (or zero). This is good programming 
+practice.
+
+In addition to all of this, there is actually another way that we can create 
+garbage. This is a more commonly used way to create garbage.
+
+*/
+
+void x()
+{
+    int* p = new int; //creating a 'new int' out onto the heap
+    //some other code
+}
+
+/*
+
+                STACK
+        _____________________
+        |                   |
+        |                   |
+        |                   |
+        |    ___________    |
+        |    |         |    |
+   x    |  p |   500   |    | //references the address 500 in the heap
+        |    |_________|    |
+        |    ___________    |
+        |    |         |    |
+   main |    |   x();  |    |  //main calls the function x
+        |    |_________|    | 
+        |                   |
+        |___________________|
+
+               HEAP
+        ___________________
+        |                 |
+        |                 |
+        |      500        |
+        |   __________    |
+        |   |        |    |
+        |   |   ?    |    |
+        |   |________|    |
+        |                 |
+        |                 | 
+        |                 |
+        |_________________|
+
+The issue with the code above is that if we don't use a delete operation inside
+this particular function we're using up above, then we're going to end up having
+this memory stored out onto the heap. When we get rid of 'x', we are left with
+the following
+
+                STACK
+        _____________________
+        |                   |
+        |                   |
+        |    ___________    |
+        |    |         |    |
+   main |    |   x();  |    |  //main calls the function x
+        |    |_________|    | 
+        |                   |
+        |___________________|
+
+               HEAP
+        ___________________
+        |                 |
+        |                 |
+        |      500        |
+        |   __________    |
+        |   |        |    | //clearly, we still have our 'int' out on the heap
+        |   |   ?    |    | //and nobody/nothing can reference it, so we find
+        |   |________|    | //that we have created garbage here
+        |                 |
+        |                 | 
+        |                 |
+        |_________________|
+
+In summary:
+    - 'new' ---> allocates space dynamically on the heap (free store)
+            ---> returns the address of the allocated memory
+    - We use 'pointers' to reference the memory allocated on the heap
+    - 'delete' ---> used to deallocate memory that is allocated on the heap
+    - 'garbage' ---> what is created when we can no longer access previously
+                     allocated memory on the heap
+    - 'dangling pointer' ---> a pointer that no longer points to something valid
+                              on the heap
 
 */
 	
