@@ -1,1 +1,71 @@
+/*
+
+1. What weird behavior does open exhibit for output files by default? How do 
+we fix this problem?
+
+~~~~~ We cannot pass through a string, we need to pass a c-string. We can 
+convert it with .c_str()
+
+2. How can you compare two strings in a case-insensitive way without
+destroying their contents? (You should NOT change the strings in order to
+compare them!)
+
+~~~~~ The inputs that the program receives definitely need to be separated 
+or else it will read it in as one input. But as long as it is just 
+whitespace it will skip it if you use: in>>ws
+
+3) Problems with the (C)string piece of data:
+
+3(i). What problem might you have with the (C)string data (being as it is 
+'mixed' with so many other data types in this file: numbers and characters 
+and such)? (Hint: Is the (C)string data one or multiple words?) Is this 
+difficult to fix? What assumption did you make to solve this problem?
+
+~~~~~ C string data is an array that can include numbers too, so there must 
+be a way that is set in-place that distinguishes data from names w/ numbers. 
+It's under the assumption that the name will be on one line.
+
+3(ii). If the (C)string had to be placed after the other data ? at the end 
+of the data group/block, what problem might arise? How do we typically avoid 
+this situation (again, assuming the data has to be in that order)? [Assume 
+you have re-written your code to deal with the new data order ? but do not 
+do so.]
+
+~~~~~ The problem that might arise is that the c-string can be taken in as 
+the start of the new group. We will have to make an assumption that the name
+is on the same line.
+
+3(iii). Think about, but do not fix, the potential problem of the user's 
+(C)string being longer than you had anticipated. (Answer this question even 
+if you used the string class to code your program!)
+
+~~~~~ We have to truncate the c-string at the max length and move on to the 
+next piece of data.
+
+4)
+
+4(i). What function is used to tell when you've reached the end of a stream?
+
+~~~~~ .eof()
+
+4(ii). Can this function be used on the keyboard stream?
+
+~~~~~ No
+
+5. How do you pass a stream to a function?
+
+~~~~~ (std::istream& in) or (std::ostream& out), especially important to pass 
+by reference
+
+6. Why is it a good idea to make input functions ignorant of whether or not 
+a stream is cin or a file? Output functions/cout/file?
+
+~~~~~ Doing this to the input functions allows us to be reuse the input/output 
+functions whether we want to read from a file stream or from the keyboard.
+
+7. Why do we close files?
+
+~~~~~ To free up memory.
+
+*/
 
