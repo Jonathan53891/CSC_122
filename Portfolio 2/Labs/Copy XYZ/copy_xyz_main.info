@@ -1,1 +1,27 @@
+/*
+    - Name: Jonathan Pilafas
+    - Class for which program was written: CSC122-001
+    - Program: Lab - "Copy XYZ"
+    - Project Name: copy_xyz_main
+    - Project Type: .cpp
+    - Levels Attempted:
+        - Given assignment is Level 1
+    - Program allows user to place blank lines between their data groups, 
+    which is Level 1.
+    - Program allows the user to place whole-line comments in their data file,
+    which is Level 1.5.
+    - Program allows for end-of-line comments, which is Level 1
+    - So this assignment is Level 1 + Level 1 + Level 1.5 + Level 1 = Level 4.5
+    
+    - Program Description:
+      
+      This C++ program is a data transfer of one file to another file. This
+      means it will ignore comments and spaces, but it successfully transfers
+      the name of the student, their ID, their GPA, and their letter grade. The
+      user can type from te keyboard to choose which file they would like to 
+      make the copy file and which file they would like to make the output file.
+      The program automatically checks that there is not already an existing
+      file of the same name that the output would overwrite.
+
+*/
 
