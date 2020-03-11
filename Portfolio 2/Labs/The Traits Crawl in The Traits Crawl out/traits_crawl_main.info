@@ -1,1 +1,22 @@
+/*
+    - Name: Jonathan Pilafas
+    - Class for which program was written: CSC122-001
+    - Program: Lab - "The Traits Crawl in The Traits Crawl out"
+    - Project Name: traits_crawl_main
+    - Project Type: .cpp
+    - Levels Attempted:
+        - Given assignment is Level 3
+    - No greater levels attempted
+    - So this assignment is Level 3 + Level 0 = Level 3
+    
+    - Program Description:
+      
+      This C++ program takes in a file with an Experiment name, population
+      number, creature name, name of trait 1, name of trait 2, amount of 
+      creatures with trait 1, and amount of creatures with trait 2. From there,
+      the program will automatically output a nicely formatted file that 
+      calculates the percentage of creatures that contain trait 1, as well as
+      the creatures that contain trait 2.
+
+*/
 
