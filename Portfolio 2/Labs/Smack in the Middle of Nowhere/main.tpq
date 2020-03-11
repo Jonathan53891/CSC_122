@@ -1,0 +1,17 @@
+What (data) types of values can your program handle?
+
+How do you count the number of data items which are in the file? Once you've counted them, how do you start over and read them in?
+
+How do you allocate memory on the heap? Is it guaranteed to work?
+
+When do you allocate memory for your values array? Before or after counting the values in the file?
+
+When you are done with dynamic memory, what should you do?
+
+What's this NULL value for, anyway?
+
+Which sorting algorithm did you use? How efficient is it? (i.e. What is it's complexity?)
+
+Does it matter if the data are sorted in ascending or descending order? Why/Why not?
+
+Do your median, sort, etc. functions need to know that your data array is dynamic?
