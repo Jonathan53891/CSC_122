@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------
+Name: Patrick Stach
+
+Class: CSC122-001
+
+Program: Project - "Balance in all things"
+
+Levels Attempted:
+-This assignment is (Level 4.5).
+Add (Level 2) to allow the user to have their checks' information in a file 
+or to type it in at the keyboard. You decide on the file's data format. 
+4.5+2 = Level 6.5
+
+Program Description:
+This program assists with balancing checkbooks when given a starting balance, 
+and checks/deposits asinputs. Checks can either be entered by keyboard
+or imported with a file. The user chooses how many checks and how many deposits
+will be inputted. Given a reported balance from the bank, the program will 
+automatically calculate the difference between the reported balance and the 
+calculated balance. The program will also list cashed checks and 
+uncashed checks by check # from smallest to greatest.
