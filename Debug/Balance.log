@@ -1,8 +1,0 @@
-﻿  Money.cpp
-c:\users\patrick\documents\github\playground\courses\csc_122\portfolio_2\balance\balance\money.cpp(17): warning C4244: 'argument': conversion from 'long' to 'short', possible loss of data
-c:\users\patrick\documents\github\playground\courses\csc_122\portfolio_2\balance\balance\money.cpp(29): warning C4244: 'argument': conversion from 'long' to 'short', possible loss of data
-c:\users\patrick\documents\github\playground\courses\csc_122\portfolio_2\balance\balance\money.cpp(35): warning C4244: 'argument': conversion from 'const long' to 'short', possible loss of data
-  main.cpp
-  Check.cpp
-  Generating Code...
-  Balance.vcxproj -> C:\Users\Patrick\Documents\GitHub\Playground\Courses\CSC_122\Portfolio_2\Balance\Debug\Balance.exe
