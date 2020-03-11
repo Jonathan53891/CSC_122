@@ -1,0 +1,22 @@
+1) How might a class help you in this program? (What data do you have to 
+encapsulate? What behaviors need to be available for this data?)
+We have to be able to input from a file into a variable and output a variable
+to a file. An experiment class can contain all the needed variables to treat
+all associated data as one "object"
+2) What do you do if there are no experiments in the file?
+Output a blank file
+3) How can you skip those comments at the top of the data file?
+Peek for '#', if one is found, ignore any text until newline
+
+4)How can you get the name to be centered?
+Calculate how many spaces for "padding" to ensure data is centered.
+so: (80-name_length)/2 will be how many spaces to the left and to the right
+center the text. When outputting the file, output calculated number of spaces
+first.
+
+5)How can you line up the additions nicely?
+First, find the "width" of the largest population number. Then use this
+width and setw(width) for that same column. Repeat for next colums
+6)How might you easily determine the width of the population numbers 
+to help you line up the addition? (Hint: Logarithms might prove handy here...)
+the width of the population numbers = log10(population) +1
