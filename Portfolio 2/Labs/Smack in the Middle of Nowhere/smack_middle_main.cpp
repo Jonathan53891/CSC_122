@@ -13,9 +13,15 @@ int main(void)
 	double num;
 	char ch;
 
-	cout << "What is the name of the file?  ";
-	getline(cin, fname);
-	data_file.open(fname.c_str());
+	while (true) {
+
+		cout << "What is the name of the file?  ";
+		getline(cin, fname);
+		data_file.open(fname);
+		if (data_file.good()) {
+			break;
+		}
+	}
 
 	/*
 	* char-wise input with get()
