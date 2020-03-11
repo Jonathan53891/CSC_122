@@ -1,1 +1,50 @@
+/*
+1. How might a class help you in this program? (What data do you have to 
+encapsulate? What behaviors need to be available for this data?)
+
+~~~~~ For this program to work, it must have the ability to input from a file
+into a variable and output a variable to a file. An experiment class can 
+contain all the needed variables to treat all associated data as one "object"
+
+2. What do you do if there are no experiments in the file?
+
+~~~~~ If there are no experiments in the fill, the program will just simply 
+output a blank file.
+
+3. How can you skip those comments at the top of the data file?
+
+~~~~~ To skip the comments at the top of the data, we can peek for '#'. If 
+one of them is found, the program will ignore any text until newline.
+
+4. How can you get the name to be centered?
+
+~~~~~ To get the name to be centered, we must first calculate how many spaces 
+the program needs for "padding" to ensure that the data is centered. So for 
+instance:
+
+(80-name_length)/2 
+
+will be how many spaces are added to the left and to the right to effectively 
+center the text. When the program is outputting the file, the the program is 
+constructed to where the output calculates the exact number of spaces needed
+to give it the appropriate amount of "padding" to ensure printing clean 
+results.
+
+5. How can you line up the additions nicely?
+
+~~~~~ To line up the additions nicely, we must first find the "width" of the 
+largest population number. Then, we can use this width and setw(width) for 
+the same column that we are currently working with to line up the additions
+nicely for that specific column. Then, we simply repeat for the following 
+columns throughout the rest of the program.
+
+6. How might you easily determine the width of the population numbers to 
+help you line up the addition? (Hint: Logarithms might prove handy here...)
+
+~~~~~ To easily determine the widh of the population numbers to help lining
+up the addition, we can use the following line: 
+
+width = log10(population) + 1 //width = the width of the population numbers
+
+*/
 
