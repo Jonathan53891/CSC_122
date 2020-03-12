@@ -85,11 +85,217 @@ Output File:
 
 */
 
-#include <stdio.h>
+/*
+
+STREAM OPERATORS:
+    - Insertion Operator '<<'(As seen with cout << var)
+    - Extraction Operator '>>' (As seen with cin >> var)
+
+*/
+
+//STREAM DECLARATIONS:
+
+//#include <fstream>
+
+//using namespace std;
+
+//int main()
+//{
+    //ifstream fin;  // streams data FROM a file
+    //ofstream fout; // streams data TO a file
+    
+    /* 
+    
+    'ifstream' is short for 'input file stream' 
+    'ofstream' is short for 'output file stream'
+    
+    */
+    
+    //ifstream fin("input.dat"); //streams data FROM a file
+    
+    /* 
+    
+    This line of code above connects this stream to an existing data file in the
+    same directory. 
+    
+    */
+    
+    //ofstream fout("output.dat"); //streams data TO a file
+    
+    /* 
+    
+    This line of code above creates a text file in the same directory. 
+    
+    Now, this isn't the best way to do things. Another way to do this is to use
+    the "open" function.
+    
+    */
+//}
+
+//OPENING A FILE W/ C-STRINGS:
+
+//#include <iostream>
+//#include <fstream>
+
+//using namespace std;
+
+//int main()
+//{
+    //ifstream fin;
+    //ofstream fout;
+    
+    //fin.open("input.dat");     // !may not connect!
+    //fout.open("output.dat");
+    
+    /*
+    
+    This is a member function of the class of objects to which "fin" and "fout"
+    belong (ifstream, ofstream). So, 'open' is a member function of those types.
+    What you're asking C++ to do is to connect this stream, "fin", to the 
+    existing file "input.dat". 
+    
+    The problem here, thought, is that it might not connect. The reason for why
+    they might not connect can be plenty of things. The file might not exist, 
+    you might have misspelled something, it could be the wrong directory, and 
+    more potential possibilities. So, a better way to do this is to do the 
+    following: 
+    
+    */
+    
+    //char file[20];
+    //ifstream fin;
+    
+    //do
+    //{
+        //fin.clear(); // clears the fail bit - allows retry
+        //cout << "Enter the name of the file to connect to";
+        //cin.getline(file, 20);
+        //file.open(file);
+    //} while(!fin);
+    
+    /*
+    
+    As seen from the above sample of code, you could create a character array 
+    called "file" to jump into a loop.
+    
+    This loop begins by clearing the 'fail' bit and allowing the user a retry.
+    Then, the rest of the loop, of course, allows you to input the file name, 
+    and the program continues to run as expected. 
+    
+    Now, if we refer back to line 143, we used double quotes around 'input.dat'.
+    This was expressed as:
+    
+    "input.dat"
+    
+    This implies that the parameter for the 'open' function is a C-string OR a 
+    NULL terminated character.
+    
+    If the input does not equal 'fin', the 'while' loop catches this and sends
+    the user back to the beginning of the 'do'. And if the the input actually
+    equals 'fin', the program exists that loop, and the program continues to 
+    run as expected. 
+    
+    */
+//}
+
+//OPENING A FILE W/ STD::STRINGS:
+
+//#include <iostream>
+//#include <fstream>
+//#include <strings>
+
+//using namespace std;
+
+//int main()
+//{
+    //string file;
+    //ifstream fin;
+    
+    //do
+    //{
+        //fin.clear();
+        //cout << "Enter the name of the file to connect to";
+        //cin >> file;
+        //file.open(file.c_str());
+        
+    //} while(!fin);
+//}
+
+//READING A FILE
+
+/*
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
 
 int main()
 {
-    printf("Hello World");
-
-    return 0;
+    string file;
+    ifstream fin;
+    
+    do
+    {
+        fin.clear();
+        cout << "Enter the name of the file to connect to";
+        cin >> file;
+        file.open(file.c_str());
+        
+    } while(!fin);
+    
+    fin >> num;
+    fin >> num;
+    fin >> num;
+    fin >> num;
+    
 }
+*/
+
+//CLOSING A FILE: 
+
+/*
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string file;
+    ifstream fin;
+    
+    do
+    {
+        fin.clear();
+        cout << "Enter the name of the file to connect to";
+        cin >> file;
+        file.open(file.c_str());
+        
+    } while(!fin);
+    
+    fin >> num;
+    fin >> num;
+    fin >> num;
+    fin >> num;
+    
+    fin.close();
+    
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//for more space
