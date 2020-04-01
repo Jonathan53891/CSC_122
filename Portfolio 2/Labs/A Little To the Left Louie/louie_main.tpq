@@ -1,1 +1,41 @@
+/*
 
+1. How can you easily determine the widest that the columns need to be? (Hint: 
+See this page about calculating the number of digits in a whole number.)
+
+~~~~~ To determine the widest number of columns that I could have in my 
+program, I was aware of the length of the columns becoming greater than 60
+characters, which would've occurred at roughly 20 columns.
+
+2. Once you know the width of a column, how can you determine whether a table 
+will fit on the screen?
+
+~~~~~ Once we know the width of the column and that it works, we know that the
+table will surely fit onto the screen. Since the output will ultimately be in
+the shape of a square, the height and width requirements will correlate with 
+the square shape of the screen being used to run the program.
+
+3. How can you get the columns to line up so nice and neat?
+
+~~~~~ By using '#include <iomanip>', we can line up the columns to be nice and 
+neat using the 'setw()' function within the iomanip library. This provides 
+flexibility to people creating programs to provide a clean output for its users. 
+
+4. How can you get your menu to accept both character and numeric input like 
+that? (Hint: You don't need to resort to peek here!)
+
+~~~~~ Inside the while/switch statement within my program, there are cases that
+have been set to navigate an outcome based on a potential input of a number or
+character. For instance, by writing:
+
+case 'a':
+case 'A':
+case '1':
+
+the program is set to respond with the "addition" functionality of my program.
+
+5. Do you need any flags to get your columns to line up neatly?
+
+~~~~~ No, I did not need any flags to line up my columns neatly.
+
+*/
