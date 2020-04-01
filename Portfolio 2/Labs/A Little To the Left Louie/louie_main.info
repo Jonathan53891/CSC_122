@@ -11,20 +11,22 @@
     
     - Program Description:
       
-      Write a program that creates a table for the user's choice of basic math operations (+, -, *, /, and %). These operations will all be performed in an integer-only way. (Modulo doesn't work with decimals anyway... And you're going to have enough trouble lining up the table without dealing with decimal places on division!)
-
-The user should also be allowed to choose the size of the table (it will, of course, be square: 4x4, 5x5, etc.). You may limit the maximum size of the table, for formatting purposes.
-
-Make sure your table is neat and lines up nicely (see the examples below). Columns should all be of equal width. This should be the minimum width necessary to hold the largest answer for the table's operation. (Be careful! This may be a negative value!) Note that, if each column is as small as possible, you can fit more of them on the screen...
-
-Try to use functions to break up the program into more manageable -- re-usable -- pieces. (You'll note that most of the table display is identical but for the corner symbol, the largest answer width, and the calculation of the entries themselves... Perhaps you could parameterize the data portions of this and ...er... 'farm-out' the calculation of the entries to a parameterized little helper function..?)
+      This C++ program creates a table based on the user's choice of basic
+      mathematical operations:
+        - addition
+        - subraction
+        - multiplication
+        - division
+        - remainders
       
-      This C++ program takes in a file with an Experiment name, population
-      number, creature name, name of trait 1, name of trait 2, amount of 
-      creatures with trait 1, and amount of creatures with trait 2. From there,
-      the program will automatically output a nicely formatted file that 
-      calculates the percentage of creatures that contain trait 1, as well as
-      the creatures that contain trait 2.
-
+      These operations are performed using only integers.
+      
+      This program alos allows the user to choose the size of the table. 
+      For instance, the choice '4' will create a 4x4 table, the choice 
+      '12' will create a 12x12 table, and so on. This program limits the 
+      size of this table to 20 columns for formatting purposes.
+      
+      In addition, this program was also constructed to ultimately produce
+      a neat and organized output for the user to comprehend and understand
+      with no trouble whatsoever.
 */
-
