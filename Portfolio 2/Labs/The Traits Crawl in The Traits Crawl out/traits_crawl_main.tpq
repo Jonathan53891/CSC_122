@@ -47,4 +47,3 @@ up the addition, we can use the following line:
 width = log10(population) + 1 //width = the width of the population numbers
 
 */
-
