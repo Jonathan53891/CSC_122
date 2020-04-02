@@ -71,4 +71,3 @@ int main(void)
     cin.ignore(INT_MAX, '\n');
     return 0;
 }
-
