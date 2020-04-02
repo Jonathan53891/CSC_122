@@ -76,4 +76,3 @@ double Money::get_value(void) const
 
 	return  (dollars + cents*.01);
 }
-
