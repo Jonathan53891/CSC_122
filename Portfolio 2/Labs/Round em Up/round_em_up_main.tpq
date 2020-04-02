@@ -1,1 +1,49 @@
+/*
 
+1. Does spacing between the numbers matter?
+
+~~~~~ No, since the program does not take whitespace into account when 
+reading in the integers from the file being used, the spacing is not a 
+factor. 
+
+2. Do they have to be in order (ascending/descending)?
+
+~~~~~ No. Since the program simply counts the amount of integers inside 
+the file, and records the min/max/avg/std dev, the order of the numbers 
+within the file has no impact on the outcome of the program. 
+
+3) Do they have to be integers? Floating point?
+
+~~~~~ In this particular program, the numbers that are read into the 
+program must be integers, as numbers with decimal values will make the
+program freeze (essentially crash).
+
+4) Is it possible for your program to run out of space while reading 
+into the file. (It shouldn't be...) (Hint: Do you have to have all of 
+the data values in memory to complete the calculations requested?)
+
+~~~~~ No, it is highly unlikely that the program will run out of space 
+while reading into the file. The array within the main program can be
+set to hold a very high amount of numbers, so the likelihood of 
+overwhelming that in of itself will be challenging to do. Also, since 
+the main program reads into the file that has the numbers stored inside
+of it, the main program ultimately doesn't require handling a large 
+enough amount of storage to begin with.
+
+5. When finding the largest/smallest item in a list, what value should 
+you start with as your assumed smallest/largest value?
+
+~~~~~ When finding the largest/smallest item in a list, we typically 
+write a 'for' loop to determine it's place within the list. This for 
+loop contains the object that represents the numbers, which inevitably
+has a data type to characterize that object. For instance, "int number".
+
+Although these data types can handle very large and small numbers, they
+are limited. For instance, there exists 'INT_MIN' and 'INT_MAX' in the
+header file "climits".
+
+Thus, a safe start for the assumed smallest/largest values within a 
+data set are the bounded values of whatever particular data type is 
+being used in the program.
+
+*/
