@@ -21,4 +21,3 @@ void Check::input(std::istream & ins)
 	}
 
 }
-
