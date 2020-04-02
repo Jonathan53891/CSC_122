@@ -101,20 +101,23 @@ char getUserChoice()
     return choice;
 }
 
+
 int getTableSize(string type)
 {
     int size;
     while(true)
     {
         cout << "What size should the " << type << " table be? ";
-        cin >> size;
+        
+	cin >> size;
         if(size <= 0)
         {
             cout << "I'm sorry, " << size << " would be stupid..." << endl;
         }
         else if(size >= 20)
         {
-            cout << "I'm sorry, " << size << " is too large of a subtraction table to print on the screen..." << endl;
+            cout << "I'm sorry, " << size 
+	    << " is too large of a table to print on the screen..." << endl;
         }
         else
         {
@@ -123,6 +126,7 @@ int getTableSize(string type)
         }
     }
 }
+
 
 int main()
 {
