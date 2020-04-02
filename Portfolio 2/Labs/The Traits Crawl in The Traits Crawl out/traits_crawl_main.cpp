@@ -17,9 +17,8 @@ inline bool file_exist(const string& name)
 	else { return true; } //File exists
 	file.close();
 	file.clear();
+	return 0;
 }
-
-
 
 int main(void)
 {
@@ -44,7 +43,7 @@ int main(void)
 	}
 	cout << "'" << filename << "' selected as input file." << endl;
 
-	cout << divider << "Enter a new output file name:  ";
+	cout << divider << "Enter a new output file name:  " << endl;
 	getline(cin, filename);
 	while (file_exist(filename))
 	{
@@ -53,12 +52,15 @@ int main(void)
 	}
 	output.open(filename.c_str());
 	cout << "'" << filename << "' selected as output file." << endl;
+	
 	Experiment experiment;
+	
 	input.peek();
 	while (!input.eof())
 	{
 		experiment.read(input);
 		experiment.write(output);
+		input.clear();
 		input.peek();
 	}
 	output.close();
