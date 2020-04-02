@@ -1,1 +1,38 @@
+/*
 
+1. What (data) types of values is your program able to handle?
+
+~~~~~ My program is able to handle 'char' and 'double' data 
+types.
+
+2. How do you count the number of data items which are in the 
+file? Once you've counted them, how do you start over and read 
+them in?
+
+~~~~~ I count the number of data items in the file by using 
+while loops to check the whole file character-by-character to
+determine how many items there are. Once they are counted, I 
+use more loops to start over and read them all into my program.
+
+3. How do you allocate memory on the heap? Is it guarenteed to 
+work?
+
+~~~~~ You allocate memory onto the heap by using pointers to 
+pass the address of an entire object/array. It is not always 
+guaranteed to work though because sometimes it's more advisable 
+to utilize the stack.
+
+4. Hi
+
+~~~~~ For the return variables for my comparison functions, I return 0 if the
+inputted strings are the same, return -1 if the first string is smaller than
+the second string, and return +1 if the second string is smaller than the
+first string.
+
+5. Hi
+
+~~~~~ To test my program sufficiently, it requires at least 3 tests to ensure
+that it works effectively. Since there are 3 possible results that could
+ideally be obtained, all of these potential results must be tested to confirm
+the effectiveness of the program.
+*/
