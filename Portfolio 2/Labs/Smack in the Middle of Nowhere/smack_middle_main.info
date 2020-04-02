@@ -1,1 +1,20 @@
+/*
+    - Name: Jonathan Pilafas
+    - Class for which program was written: CSC122-001
+    - Program: Lab - "Smack in the Middle of Nowhere!"
+    - Project Name: smack_middle_main
+    - Project Type: .cpp
+    - Levels Attempted:
+        - Given assignment is Level 1.5
+    - No greater levels attempted
+    - So this assignment is Level 1.5 + Level 0 = Level 1.5
+    
+    - Program Description:
+      
+      This program finds the median of a set of data from a
+      given file without knowing exactly how much data is in 
+      the file. The program counts the data, reads them into
+      a sorting method, finds the median of the set of data,
+      and ultimately prints the median of the sorted data.
 
+*/
