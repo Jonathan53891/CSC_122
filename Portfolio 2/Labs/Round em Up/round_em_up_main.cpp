@@ -10,7 +10,7 @@ double Statistics(int numbers[], int count)
 	int max = numbers[0];
 	double sum = 0;
 	
-	for(int i = 0; i <= count; i++) //For each value in the array.
+	for(int i = 0; i < count; i++) //For each value in the array.
 	{
 		if(numbers[i] < min) //If necessary, update the minimum.
 			min = numbers[i] + 1;
@@ -45,7 +45,7 @@ void StandardDeviation(int numbers[], int count, double average)
 int main()
 {
 	string fileName;
-	int numbers[10]; //Declare an array of size 200.
+	int numbers[200]; //Declare an array of size 200.
 	int count = 0;
 	cout << " Welcome to the Number Statistics Program!!!" << endl;
 	cout << "Enter the name of the file: "; 
@@ -66,10 +66,12 @@ int main()
 	cout << "Reading data from " << fileName << "..." << endl;
 	
 	while(!file.eof()) //As long the eof is not reached.
-	
-	file >> numbers[count++]; 
-	//Read each number into the array, and increment the counter.
-	
+	{
+		file >> numbers[count++];
+		file >> ws;
+		file.peek();
+	}
+	 
 	cout << "Calculating..." << endl;
 	cout << "Done processing data!" << endl;
 	cout << "For your data, the statistics are as follows:" << endl;
