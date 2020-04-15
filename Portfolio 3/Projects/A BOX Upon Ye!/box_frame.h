@@ -1,5 +1,5 @@
-#ifndef FRAME_H
-#define FRAME_H
+#ifndef BOX_FRAME_H
+#define BOX_FRAME_H
 
 #include <string>
 #include <iostream>
