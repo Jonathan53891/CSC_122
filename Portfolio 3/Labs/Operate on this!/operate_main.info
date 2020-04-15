@@ -1,16 +1,19 @@
-Name: Patrick Stach
+/*
+	- Name: Jonathan Pilafas
+	- Class for which program was written: CSC122-001
+	- Program: Lab - Operate on this!
+	- Project Name: operate_main
+	- Project Type: .cpp
+	- Levels Attempted:
+		- Given assignment is Level 2.
+		- This program also has an overload operator [] that can return
+		  the x or y part of the point (Level 1).
+		- So this assignment is Level 2 + Level 1 = Level 3
+    
+	- Program Description:
+ 	 
+  	This C++ program includes overloaded operators for a point class that
+	allows for easy inputting/outputting, equality checks, can return the 
+	distance between 2 points, and can find the midpoint between 2 points.
 
-Class: CSC122-001
-
-Program: Labs - "Operate on this"
-
-Levels Attempted:
--This assignment is (Level 2).
-Add (Level 1) to overload operator[] to return the x or y part of the point.
-2+1 = Level 3
-
-Program Description:
-This library includes overloaded operators for the point class 
-which allows for easy inputting/ outputting, equality checks,
-returning distance between 2 points and finding a midpoint 
-between 2 points
+*/
