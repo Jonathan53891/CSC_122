@@ -1,4 +1,4 @@
-#include "point.h"
+#include "operate_point.h"
 
 #include <iostream>
 #include <math.h>
