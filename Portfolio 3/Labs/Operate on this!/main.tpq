@@ -1,0 +1,46 @@
+1) Which operators are members and which are non-members? Do any 
+have to be members?
+In my code, I made all of them members in the point class, but out of all of
+them, only the [ ] operator needs to be a member function
+
+2)Which operators should be const? What other methods might well be made const?
+In general, what is the rule which determines if a method should be made const?
+I made all of them constant because none of them needed to modify the original
+points. This is with the exception of input and output since the stream
+needs to be modified. The methods should be constant unless it is necessary
+in their operation for them to be modified.
+
+3) What type do equality and and inequality return? Input? Output? Assignment?
+equality/inequality: bool
+Input: istream
+Output: ostream
+Assignment: original type
+
+4)Do you agree with your friend's decision to use operator/ for midpoint? 
+Why/Why not?
+No, the / operator is usually used for division and midpoint is not associated
+with the "/" sign so it will be confusing
+
+5)Why didn't you overload operators for less than, greater than, etc.?
+A point can't be greater than or less than another. For example, you cant say
+(4,2)>(3,4), it doesnt make sense
+
+6)Your friend wanted to overload operators for the flip and shift methods,
+too (~ and += respectively). Why did you talk them out of it? 
+Why wasn't this a good idea?
+We wouldn't be able to chose whether to flip x or y or shift x or y since in
+both cases it will read a double and would not be able to know whether we
+want x or y to be flipped
+
+7)Just because you've added operators, should you necessarily remove 
+the old methods that did these jobs?
+No, there can be some cases where the other methods make more sense or are 
+more practical
+
+8)Should the programmer be able to do:
+    p['X'] = 2.0;
+to change the X-coordinate of a Point object p?
+No
+
+9)If you were going to allow such behavior, how would you do it?
+We would have to define the assignment operator for this to work.
