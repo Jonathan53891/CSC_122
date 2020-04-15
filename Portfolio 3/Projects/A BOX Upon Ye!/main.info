@@ -1,0 +1,19 @@
+ame: Patrick Stach
+
+Class: CSC122-001
+
+Program: Project - "A box upon ye"
+
+Levels Attempted:
+This assignment is (Level 5).
+Add (Level 1.5) to add a choice of frame types: single line, double line, or 
+shaded
+Add (Level 1) to make a nice menu to set up these options and include in
+the menu save and load options. This option configuration should also be 
+automatically read at program startup time — if it exists.
+5+1.5+1= Level 7.5
+
+Program Description:
+This program takes user input either through keyboard of a phrase, and given
+desired framing character, frame style and centering, will either
+display the framed phrase or output it to a file
