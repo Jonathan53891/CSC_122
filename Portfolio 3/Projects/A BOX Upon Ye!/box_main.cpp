@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <climits>
-#include "frame.h"
+#include "box_frame.h"
 #include <fstream>
 using namespace std;
 
