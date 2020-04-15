@@ -1,5 +1,5 @@
 #include <iostream>
-#include "point.h"
+#include "operate_point.h"
 using namespace std;
 
 int main()
