@@ -1,10 +1,10 @@
-#ifndef RECT_H
-#define RECT_H
+#ifndef SHAPE_OF_IT_RECT_H
+#define SHAPE_OF_IT_RECT_H
 #include <iostream>
 #include <string>
-#include "point.h"
-#include "Shape.h"
-#include "TwoD.h"
+#include "shape_of_it_point.h"
+#include "shape_of_it_shape.h"
+#include "shape_of_it_twoD.h"
 class Rect :public TwoD
 {
     double length, width;
