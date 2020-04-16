@@ -1,10 +1,10 @@
-#ifndef CONE_H
-#define CONE_H
+#ifndef SHAPE_OF_IT_CONE_H
+#define SHAPE_OF_IT_CONE_H
 #include <iostream>
 #include <string>
-#include "point.h"
-#include "Shape.h"
-#include "ThreeD.h"
+#include "shape_of_it_point.h"
+#include "shape_of_it_shape.h"
+#include "shape_of_it_threeD.h"
 class Cone :public ThreeD
 {
     double height, radius;
