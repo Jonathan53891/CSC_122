@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 #include <vector>
 #include "shape_of_it_line.h"
 #include "shape_of_it_curve.h"
