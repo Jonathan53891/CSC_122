@@ -1,9 +1,9 @@
-#ifndef ONED_H
-#define ONED_H
+#ifndef SHAPE_OF_IT_ONED_H
+#define SHAPE_OF_IT_ONED_H
 #include <iostream>
 #include <string>
-#include "point.h"
-#include "Shape.h"
+#include "shape_of_it_point.h"
+#include "shape_of_it_shape.h"
 class OneD :public Shape
 {
     Point q;
