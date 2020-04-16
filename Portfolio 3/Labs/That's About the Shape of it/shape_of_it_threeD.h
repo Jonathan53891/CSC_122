@@ -1,9 +1,9 @@
-#ifndef THREED_H
-#define THREED_H
+#ifndef SHAPE_OF_IT_THREED_H
+#define SHAPE_OF_IT_THREED_H
 #include <iostream>
 #include <string>
-#include "point.h"
-#include "Shape.h"
+#include "shape_of_it_point.h"
+#include "shape_of_it_shape.h"
 class ThreeD :public Shape
 {
 public:
