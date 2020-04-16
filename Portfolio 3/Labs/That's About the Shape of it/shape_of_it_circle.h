@@ -2,9 +2,9 @@
 #define CIRCLE_H
 #include <iostream>
 #include <string>
-#include "point.h"
-#include "Shape.h"
-#include "TwoD.h"
+#include "shape_of_it_point.h"
+#include "shape_of_it_shape.h"
+#include "shape_of_it_twoD.h"
 class Circle :public TwoD
 {
     double radius;
