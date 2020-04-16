@@ -1,10 +1,10 @@
-#ifndef CURVE_H
-#define CURVE_H
+#ifndef SHAPE_OF_IT_CURVE_H
+#define SHAPE_OF_IT_CURVE_H
 #include <iostream>
 #include <string>
-#include "point.h"
-#include "Shape.h"
-#include "OneD.h"
+#include "shape_of_it_point.h"
+#include "shape_of_it_shape.h"
+#include "shape_of_it_oneD.h"
 #include <vector>
 class Curve :public OneD
 {
