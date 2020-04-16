@@ -1,0 +1,46 @@
+/*
+
+1. How many libraries did you create for your hierarchy?
+
+~~~~~ I created 11 libraries, but all of them are simply used as header 
+files because they are all relatively small and required a very minimum 
+amount of code. So therefore, I just simply defined them in the class.
+
+2. How can you store information about so many different classes in a single
+container?
+
+~~~~~ You can store the information about so many different classes in a 
+single container through inheritance, shape being the base class, then
+1D/2D/3D being the derived classes. Then from there, line, curve, circle,
+rectangle, sphere, cube, and cone are all derived classes from their
+respective dimension classes.
+
+3. What does that new keyword virtual have to do with any of this?
+
+~~~~~ The keyword virtual is necessary when implementing polymorphism so 
+that when in the main function when you try to call a function from the shape
+object, it will find the function for the specific shape instead of a general
+"Shape" function.
+
+4. Will you ever need/want to create an object of type Shape, OneD, TwoD, or
+ThreeD? How can you assure that this won't happen?
+
+~~~~~ No. To assure this won't happen, we can create a pure abstract function.
+For instance, we could have the following example below:
+	virtual void print(std::ostream & out) const = 0;
+
+5. What other methods/operators might prove useful in an application for 
+drawing shapes? What if the application were more of a computer-aided
+instruction in geometry? Is there a need to limit your classes?
+
+~~~~~ Some other methods that would be useful would be methods that calculate
+perimeter, surface area, volume, etc. Or for the curve calculating the
+distance. Basically, any function that can calculate something from its given
+dimension.
+
+6. What kind of container should you use to store the Shapes:
+dynamic array, static array, templated dynamic Array class, vector, ...
+
+~~~~~ I used a vector of pointers to the shape object, so the base <Shape*>
+
+*/
