@@ -1,12 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "Line.h"
-#include "Curve.h"
-#include "Circle.h"
-#include "Rect.h"
-#include "Cone.h"
-#include "Cube.h"
-#include "Sphere.h"
+#include "shape_of_it_line.h"
+#include "shape_of_it_curve.h"
+#include "shape_of_it_circle.h"
+#include "shape_of_it_rect.h"
+#include "shape_of_it_cone.h"
+#include "shape_of_it_cube.h"
+#include "shape_of_it_sphere.h"
 using namespace std;
 
 const string divider = string(60, '-') + '\n';
