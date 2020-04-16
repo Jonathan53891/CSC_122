@@ -1,5 +1,5 @@
-#ifndef CIRCLE_H
-#define CIRCLE_H
+#ifndef SHAPE_OF_IT_CIRCLE_H
+#define SHAPE_OF_IT_CIRCLE_H
 #include <iostream>
 #include <string>
 #include "shape_of_it_point.h"
