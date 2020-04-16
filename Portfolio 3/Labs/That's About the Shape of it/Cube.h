@@ -1,10 +1,10 @@
-#ifndef CUBE_H
-#define CUBE_H
+#ifndef SHAPE_OF_IT_CUBE_H
+#define SHAPE_OF_IT_CUBE_H
 #include <iostream>
 #include <string>
-#include "point.h"
-#include "Shape.h"
-#include "ThreeD.h"
+#include "shape_of_it_point.h"
+#include "shape_of_it_shape.h"
+#include "shape_of_it_threeD.h"
 class Cube :public ThreeD
 {
     double width;
