@@ -1,8 +1,8 @@
-#ifndef SHAPE_H
-#define SHAPE_H
+#ifndef SHAPE_OF_IT_SHAPE_H
+#define SHAPE_OF_IT_SHAPE_H
 #include <iostream>
 #include <string>
-#include "point.h"
+#include "shape_of_it_point.h"
 class Shape
 {
 private:
