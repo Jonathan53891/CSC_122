@@ -1,4 +1,4 @@
-#include "point.h"
+#include "shape_of_it_point.h"
 
 #include <iostream>
 #include <math.h>
