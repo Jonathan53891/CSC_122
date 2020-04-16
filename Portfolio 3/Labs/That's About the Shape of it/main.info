@@ -1,0 +1,14 @@
+Name: Patrick Stach
+
+Class: CSC122-001
+
+Program: Lab - "Thats about the shape of it"
+
+Levels Attempted:
+This assignment is (Level 4).
+
+Program Description:
+This program allows the user to store shapes in a list and display a list
+of their names or a list of their detailed info. The user inputs all data 
+that the shape needs, such as name, point, radius, etc. The user can also
+delete a chosen shape in the list
