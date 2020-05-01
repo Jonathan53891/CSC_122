@@ -15,5 +15,4 @@
 	a list of their names or a list of their detailed info. The user 
 	inputs all of the data that the shape needs, such as its name, point,
 	radius, etc. The user can also delete a chosen shape in the list.
-
 */
