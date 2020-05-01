@@ -1,5 +1,6 @@
 #ifndef POINT_CLASS_HEADER_INCLUDED
 #define POINT_CLASS_HEADER_INCLUDED
+
 #include <iostream>
 // A 2D point class
 class Point
