@@ -42,5 +42,4 @@ dimension.
 dynamic array, static array, templated dynamic Array class, vector, ...
 
 ~~~~~ I used a vector of pointers to the shape object, so the base <Shape*>
-
 */
