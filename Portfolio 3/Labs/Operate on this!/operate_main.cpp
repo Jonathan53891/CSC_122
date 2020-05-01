@@ -1,5 +1,6 @@
 #include <iostream>
 #include "operate_point.h"
+
 using namespace std;
 
 int main()
