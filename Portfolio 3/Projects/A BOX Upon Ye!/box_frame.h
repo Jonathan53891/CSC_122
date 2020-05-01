@@ -10,7 +10,7 @@ class Frame
 
     std::vector<std::string> word_list;
     char frame_ch;
-    char style;// 0=shaded, 1 = single, 2 = double
+    char style; // 0=shaded, 1 = single, 2 = double
     char align; // L= Left, C = Center, R = Right
 public:
     Frame() : frame_ch('|'), style(1), align('L') {}
