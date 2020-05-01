@@ -60,6 +60,5 @@ to change the X-coordinate of a Point object p?
 9. If you were going to allow such behavior, how would you do it?
 
 ~~~~~ We would have to define the assignment operator for this to work.
-
 */
 
