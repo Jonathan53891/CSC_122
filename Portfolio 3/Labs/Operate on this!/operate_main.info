@@ -15,5 +15,4 @@
   	This C++ program includes overloaded operators for a point class that
 	allows for easy inputting/outputting, equality checks, can return the 
 	distance between 2 points, and can find the midpoint between 2 points.
-
 */
