@@ -8,6 +8,7 @@
 #include "shape_of_it_cone.h"
 #include "shape_of_it_cube.h"
 #include "shape_of_it_sphere.h"
+
 using namespace std;
 
 const string divider = string(60, '-') + '\n';
