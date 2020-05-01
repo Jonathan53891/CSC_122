@@ -19,5 +19,4 @@
 	This C++ program takes the user input either through a keyboard of a
 	phrase, adn given desired framing character, frame style and centering,
 	will either display the framed phrase or output it to a file.
-
 */
