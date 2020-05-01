@@ -1,5 +1,6 @@
 #ifndef SHAPE_OF_IT_SHAPE_H
 #define SHAPE_OF_IT_SHAPE_H
+
 #include <iostream>
 #include <string>
 #include "shape_of_it_point.h"
